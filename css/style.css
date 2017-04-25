@@ -4,6 +4,26 @@
     color: yellow;
 }
 
-body{
+/*Sidebar nav*/
+.nav-pills .nav-item .active{
+    color: #45526E;
+}
+.nav-pills .nav-link.active{
+    border-left: 2px solid #45526E;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-pills .nav-item a{
+    color: #666;
+}
+
+body { 
     padding-top: 50px;
+    position: relative;
+}
+
+.img-fluid{
+    height:20em;
+    width:20em;
+    margin: 6% auto 2% auto;
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#sidebar" data-offset="59">
     <!--Navbar-->
         <nav class="navbar fixed-top navbar-toggleable-sm navbar-dark indigo">
             <div class="container">
@@ -28,7 +27,7 @@
                 </a>
                 <div class="collapse navbar-collapse" id="navbarNav1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="about.html"><strong>About</strong></a>
                         </li>
                         <li class="nav-item">
@@ -42,108 +41,59 @@
             </div>
         </nav>
 	    
-    
     <main>
-    <div class="container">
-        <!--Jumbotron-->
-        <div class="row mt-2 wow fadeIn" data-wow-delay="0.18s">
-            <div class="col-md-12 pt-lg-4 pt-md-2 pt-sm-1">
-                <div class="jumbotron text-center">
-                    <h1>Welcome to my site!</h1><br>
-                    <h5 class="lead">Here is some text</h5>
-                    <hr>
-                    <h6 class="mb-1">Here is some more text </h6>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">A button</a>
-                    <a href="#" class="btn btn-outline-warning waves-effect" role="button">Another button <i class="fa fa-book right"></i></a>
+        <div class="container-fluid" style="background-color: orange;">
+        <div class="container">
+        <div class="row py-4 align-items-center wow fadeIn" data-wow-delay="0.18s">
+            <div class="col-lg-4 text-center">
+                <img src="img/balloonphoto.jpg" class="rounded-circle img-fluid aboutphoto" alt="Photo of me">
+            </div>
+            <div class="text-lg-left text-sm-center col-lg-7 offset-lg-1 mt-lg-5 pt-md-2 pt-sm-1">
+                <h1 class="mb-1" style="font-size:58px; font-weight: 400;">Jeffrey Huang</h1>
+                <h4 class="blue-grey-text mb-0"><i>Ideas Start Here ... </i></h4>
+<!--                <hr>--><br>
+                <p class="h5-responsive">Hey there! I'm a 18-year old student studying computer engineering at the University of Waterloo. I like food, snowboarding, travelling, and technology, and this is my autobiography.</p>
+            </div>
+        </div>
+        </div>
+        </div>
+<!--        <hr>-->
+        <div class="container">
+        <div class="row pt-4">
+            <!-- Main area -->
+            <div class="col-xl-10 col-lg-11">
+                <section class="wow fadeIn" data-wow-delay="0.2s" id="mystory">
+                    <h2>My Story</h2>
+                    <p>One</p>
+                    <br><br><br><br><br><br><br>
+                </section>
+                <section class="wow fadeIn" data-wow-delay="0.2s" id="interests">
+                    <h2>Interests</h2>
+                    <p>Two</p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </section>
+                <section class="wow fadeIn" data-wow-delay="0.2s" id="resume">
+                    <h2>Resume</h2>
+                    <p>My resume is clickable! Alternatively, click here for a pdf copy.</p>
+                    <div class="container">
+                    <iframe class=" ml-1 z-depth-1 hoverable" src="https://resume.creddle.io/embed/hmy4ssymqqr" width="827" height="1000" scrolling="no" frameborder="0">
+                    </iframe>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Right sidebar-->
+            <div class="col-xl-2 col-lg-1 hidden-md-down wow fadeIn" data-wow-delay="0.2s">
+                <div id="sidebar" style="position: sticky; top:80px;">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#mystory">My Story</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        
-        <!--Cards-->
-        <div class="row">
-                <!--First columnn-->
-                <div class="col-lg-4 pb-2">
-                    <!--Card-->
-                    <div class="card text-center wow fadeIn" data-wow-delay="0.25s">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(3).jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask flex-center"><p class="white-text">White s. light overlay</p></div>
-                            </a>
-                        </div>
-                        <!--Card content-->
-                        <div class="card-block">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-info">Read more</a>
-                        </div>
-                        <!--/.Card content-->
-
-                    </div>
-                    <!--/.Card-->
-                </div>
-                <!--First columnn-->
-
-                <!--Second columnn-->
-                <div class="col-lg-4 pb-2">
-                    <!--Card-->
-                    <div class="card text-center wow fadeIn" data-wow-delay="0.25s">
-
-                        <!--Card image-->
-                        <div class="view overlay hm-zoom hm-blue-light">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(1).jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask flex-center"><p class="white-text">Blue light overlay with zoom</p></div>
-                            </a>
-                        </div>
-                        <!--/.Card image-->
-
-                        <!--Card content-->
-                        <div class="card-block">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-info">Read more</a>
-                        </div>
-                        <!--/.Card content-->
-
-                    </div>
-                    <!--/.Card-->
-                </div>
-                <!--Second columnn-->
-
-                <!--Third columnn-->
-                <div class="col-lg-4 pb-2">
-                    <!--Card-->
-                    <div class="card text-center wow fadeIn" data-wow-delay="0.25s">
-                        <!--Card image-->
-                        <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/Architecture/4-col/img%20(4).jpg" class="img-fluid" alt="">
-                            <a href="#">
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-                        <!--/.Card image-->
-                        <!--Card content-->
-                        <div class="card-block">
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-info">Read more</a>
-                        </div>
-                        <!--/.Card content-->
-
-                    </div>
-                    <!--/.Card-->
-                </div>
-                <!--Third columnn-->
-            </div>
-    </div>
+        </div>
     </main>
     
 <!--Footer-->
