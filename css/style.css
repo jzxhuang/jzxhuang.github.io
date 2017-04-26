@@ -16,7 +16,8 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 400;
 }
 .h-footer{
-    padding-bottom: 0.25em;
+    padding-bottom: 0.42em;
+    color: #EEC856;
 }
 .roboto-nav{
   font-family: "Roboto", sans-serif;
@@ -129,24 +130,37 @@ header .navbar.pastcarousel .navbar-brand{
 }
 
 /* Carousel*/     
-        .carousel,
-        .carousel-item,
-        .active {
-            height: 100%;
-        }
-        
-        .carousel-inner {
-            height: 100%;
-        }
-        
-        .flex-center {
-            color: #fff;
-        }
-        
-        .carousel-caption {
-            height: 100%;
-            padding-top: 7rem;
-        }
+.carousel,
+.carousel-item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.flex-center {
+    color: #fff;
+}
+
+.carousel-caption {
+    height: 100%;
+    padding-top: 7rem;
+}
+/*Footer*/
+footer.page-footer{
+    background-color: midnightblue;
+}
+footer.page-footer a.email{
+    color: turquoise;
+}
+footer.page-footer a.email:hover{
+    color: #EEC856;
+}
+footer.page-footer a:hover{
+    color: #EEC856;
+}
 /*Background*/
 #about{
     background-color: bisque;
