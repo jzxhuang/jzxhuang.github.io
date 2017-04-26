@@ -1,7 +1,112 @@
-/* YOUR CUSTOM STYLES */
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Roboto:100,100i,300,300i,400,400i,500,500i');
 
-.navbar-collapse{
-    color: yellow;
+body{
+  
+  position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+.h2about{
+    font-size: 2.1em;
+    padding-bottom: 0.15em;
+    font-weight: 400;
+}
+.h-footer{
+    padding-bottom: 0.25em;
+}
+.roboto-nav{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.02em;
+}
+
+/* Necessary for full page carousel*/
+html, body, .view {
+    height: 100%;
+    width: 100%;
+}
+
+/*NAVBAR*/
+.navbar {
+  padding: 25px 0;
+  transition: all .5s ease-out;
+    box-shadow: 0 0;
+}
+
+.navbar.navbar-light .navbar-toggler-icon {
+    cursor: pointer;
+}   
+
+.navbar.navbar-light .navbar-nav a {
+  color: white;
+  padding: 4px 10px;
+}
+
+.navbar-light{
+    border:none;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item a:hover {
+    color: #EEC856;
+    transition: .35s;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: white;
+}
+/*Brand*/
+.navbar-light .navbar-brand{
+    color: white;
+    padding: 4px 0;
+    margin-left: 1px;
+}
+/*
+.navbar-light .navbar-brand:hover{
+    color: #EEC856;
+    transition. 35s;
+}
+*/
+/*
+.navbar.navbar-light .navbar-nav .nav-item.active a {
+  font-weight: 700;
+  color: #EEC856;
+  background: transparent;
+  border-bottom: 4px solid #EEC856;
+  text-shadow: none;
+}
+*/
+
+.navbar-light .navbar-nav .nav-link.active{
+  font-weight: 400;
+  color: #EEC856;
+  background: transparent;
+  border-bottom: 4px solid #EEC856;
+  text-shadow: none;
+}
+.navbar.navbar-light .nav-item.active{
+    background-color: transparent;
+}
+
+/*Nav after carousel*/
+header .navbar.pastcarousel{
+    background-color: midnightblue;
+    padding-top: 0px;
+    padding-bottom:10px;
+}
+header .navbar.pastcarousel .navbar-nav{
+    padding-top: 10px;
+}
+header .navbar.pastcarousel .navbar-brand{
+    padding-top: 15px;
+    font-size: 1.1em;
 }
 
 /*Sidebar nav*/
@@ -17,13 +122,38 @@
     color: #666;
 }
 
-body { 
-    padding-top: 50px;
-    position: relative;
-}
-
-.img-fluid{
+.img-fluid.aboutphoto{
     height:20em;
     width:20em;
     margin: 6% auto 2% auto;
+}
+
+/* Carousel*/     
+        .carousel,
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+        
+        .carousel-inner {
+            height: 100%;
+        }
+        
+        .flex-center {
+            color: #fff;
+        }
+        
+        .carousel-caption {
+            height: 100%;
+            padding-top: 7rem;
+        }
+/*Background*/
+#about{
+    background-color: bisque;
+}
+#projects{
+    background-color: aqua;
+}
+#resume{
+    background-color: lavender;
 }
