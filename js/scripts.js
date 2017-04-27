@@ -68,9 +68,9 @@ $('a[href*="#"]')
         // we round here to reduce a little workload
         stop = Math.round($(window).scrollTop());
         if (stop > mainbottom) {
-            $('header nav').addClass('pastcarousel');
+            $('header nav').addClass('pastcarousel hoverable navhover');
         } else {
-            $('header nav').removeClass('pastcarousel');
+            $('header nav').removeClass('pastcarousel hoverable navhover');
        }
     });
 });
