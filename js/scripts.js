@@ -73,4 +73,12 @@ $('a[href*="#"]')
             $('header nav').removeClass('pastcarousel hoverable navhover');
        }
     });
+    //Carousel header hover
+    $( function() {
+$('div .carousel-heading').hover(function(){
+    $('a, h1, h4').removeClass('hidden');
+}, function() {
+    $('a, h1, h4').addClass('hidden');
+});
+});
 });
