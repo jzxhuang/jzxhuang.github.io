@@ -25,6 +25,7 @@ $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
     .not('[href="#featured"]')
+    .not(".accordion")
   .click(function(event) {
     // On-page links
     if (
@@ -76,9 +77,10 @@ $('a[href*="#"]')
     //Carousel header hover
     $( function() {
 $('div .carousel-heading').hover(function(){
-    $('a, h1, h4').removeClass('hidden');
+    $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').removeClass('hidden');
 }, function() {
-    $('a, h1, h4').addClass('hidden');
+    $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').addClass('hidden');
 });
 });
+    
 });

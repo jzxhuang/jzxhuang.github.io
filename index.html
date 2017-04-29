@@ -65,14 +65,15 @@
                 <!--Mask color-->
                 <div class="view hm-black-light">
                     <!--Video source-->
-                    <video class="video-full" autoplay loop>
-                        <source src="video/snowboard.mp4" type="video/mp4" />
+                    <video class="video-full" poster="img/snowboardss.png" autoplay loop>
+                        <source src="video/snowboardWebM.webm" type="video/webm">
+                        <source src="video/snowboard.mp4" type="video/mp4">
                     </video>
                     <div class="full-bg-img"></div>
                 </div>
                 <!--Caption-->
                 <div class="carousel-caption">
-                    <div class="flex-center animated zoomIn">
+                    <div class="flex-center">
                         <ul>
                             <div class="row carousel-heading justify-content-center">
                             <div class="col align-self-center">
@@ -105,14 +106,14 @@
                 <div class="view hm-stylish-light">
                     <!--Video source-->
                     <video class="video-full" autoplay loop muted>
-                        <source src="video/gameclipmuted.mp4" type="video/mp4" />
+                        <source src="video/gameclipmuted.mp4" type="video/mp4">
                     </video>
                     <div class="mask"></div>
                 </div>
 
                 <!--Caption-->
                 <div class="carousel-caption">
-                    <div class="flex-center animated zoomIn">
+                    <div class="flex-center">
                         <ul>
                             <div class="row carousel-heading justify-content-center">
                             <div class="col align-self-center">
@@ -120,7 +121,7 @@
                                 <h1 class="hidden">I'm a developer</h1>
                             </li>
                             <li>
-                                <h4 class="h4-responsive hidden">Cool quote about coding</h4>
+                                <h4 class="h4-responsive hidden">Games, cars, nanobots, and more</h4>
                             </li>
                             <li>
                                 <a href="#projects" class="z-depth-2 btn btn-primary btn-lg hidden">My Projects</a>
@@ -147,15 +148,16 @@
                 <!--Mask color-->
                 <div class="view hm-black-light">
                     <!--Video source-->
-                    <video class="video-full" autoplay loop muted poster="img/riverback.jpg">
-                        <source src="video/dive.mp4" type="video/mp4" />
+                    <video class="video-full" poster="img/divess.png" autoplay loop muted>
+                        <source src="video/diveWebM.webm" type="video/webm">
+                        <source src="video/dive.mp4" type="video/mp4">
                     </video>
                     <div class="mask"></div>
                 </div>
 
                 <!--Caption-->
                 <div class="carousel-caption">
-                    <div class="flex-center animated zoomIn">
+                    <div class="flex-center">
                         <ul>
                             <div class="row carousel-heading justify-content-center">
                             <div class="col align-self-center">
@@ -199,39 +201,81 @@
         <div class="col-lg-4">
             <img src="img/balloonphoto.jpg" class="rounded-circle img-fluid aboutphoto" alt="Photo of me">
         </div>
-        <div class="text-lg-left text-sm-center col-lg-7 offset-lg-1 mt-lg-4 pt-md-2 pt-sm-1">
+        <div class="center-md-down col-lg-7 offset-lg-1 mt-lg-4 pt-md-2 pt-sm-1">
             <h1 class="mb-1" style="font-size:58px; font-weight: 400;">Jeffrey Huang</h1>
             <h4 class="blue-grey-text mb-lg-1 mb-sm-0"><i>Ideas Start Here ... </i></h4>
-<!--                <hr>--><br>
-            <p class="h5-responsive">Hey there! I'm an 18 year old student studying computer engineering at the University of Waterloo. I like food, snowboarding, travelling, and technology, and this is my autobiography.</p>
+            <br>
+            <p class="h5-responsive">Hey there! I'm an 18 year old student studying computer engineering at the University of Waterloo. Aside from tinkering and coding, my favourite things to do are  travelling, snowboarding, and trying new food.</p>
         </div>
         </div>
+        
+    <div class="row pt-2 wow fadeIn" data-wow-delay="0.2s">
+    <div class="col offset-lg-1">
+    <!--Accordion wrapper-->
+    <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="card accordion">
+        <div class="card-header accordion" role="tab" id="headingOne">
+            <a class="collapsed accordion"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <h4 class="mb-0">
+                My Story<i class="fa fa-angle-up fa-pull-right"></i>
+                </h4>
+            </a>
+        </div>
+        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-block">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+            </div>
+        </div>
+    </div>
+    <div class="card accordion">
+        <div class="card-header accordion" role="tab" id="headingTwo">
+            <a class="collapsed accordion" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h4 class="mb-0">
+                My Passions<i class="fa fa-angle-up fa-pull-right"></i>
+                </h4>
+            </a>
+        </div>
+        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-block">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+            </div>
+        </div>
+    </div>
+    </div>
+<!--/.Accordion wrapper-->
+    </div>
+    </div>   
+    
+    <!-- Lightbox -->    
     <div class="row pt-3 wow fadeIn" data-wow-delay="0.18s">
-        <div class="offset-md-2 col-md-8">
+        <div class="col">
         <div class="row no-gutters">
-            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            <a href="img/tux.jpg" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4"><img src="img/tux_tn.jpg" class="img-fluid"></a>
+            <a href="img/percerock.jpg" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4"><img src="img/percerock_tn.jpg" class="img-fluid"></a>
+            <a href="img/couple.jpg" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4"><img src="img/couple_tn.jpg" class="img-fluid"></a>
+        </div>
+        <div class="row no-gutters">
+            <a href="img/mexico.jpg" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4"><img src="img/mexico_tn.jpg" class="img-fluid">
             </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
+            <a href="img/boys.JPG" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4"><img src="img/boys_tn.jpg" class="img-fluid">
             </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+            <a href="img/snowboard_tremblant.jpg" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4"><img src="img/snowboard_tremblant_tn.jpg" class="img-fluid">
             </a>
         </div>
         <div class="row no-gutters">
-            <a href="img/balloonphoto.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="img/balloonphoto.jpg" class="img-fluid">
+            <a href="img/family.jpg" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4">
+                <img src="img/family_tn.jpg" class="img-fluid">
             </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+            <a href="img/riverback.jpg" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4">
+                <img src="img/riverback_tn.jpg" class="img-fluid">
             </a>
-            <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+            <a href="img/lobster.jpg" data-toggle="lightbox" data-gallery="lightbox-gallery" class="col-sm-4"><img src="img/lobster_tn.jpg" class="img-fluid">
             </a>
         </div>
     </div>
     </div>
+        
+        
     <div class="row py-3">
         
     </div>
@@ -239,7 +283,7 @@
     </div>
         
     <div class="page py-5" id="projects">
-    <div class="container py-3">
+    <div class="container py-4">
         <div class="row">
             <div class="col-xl-12">
                 <h2 class="h2about">Projects</h2>
@@ -333,7 +377,7 @@
     </div>
     </div>
         
-    <div class="page" id="resume">
+    <div class="page pb-5" id="resume">
     <div class="container pt-4">
         <div class="row wow fadeIn" data-wow-delay="0.18s">
             <div class="col-xl-12">
@@ -354,19 +398,19 @@
     </main>
     
 <!--Footer-->
-<footer class="page-footer center-on-small-only pt-1">
+<footer class="page-footer center-on-small-only">
     <!--Footer Links-->
     <div class="container">
-        <div class="row">
+        <div class="row wow fadeIn" data-wow-delay="0.16s">
             <!--First column-->
             <div class="col-md-9 ">
                 <h4 class="title-responsive h-footer text-center"><strong>Get in Touch</strong></h4>
                 <p class="text-muted white-text text-center">Do you have a question? Are you secretly my long last twin? Whatever it may be, I'd love to talk to you! Send me an e-mail me at <a class="email" target="_blank" href="mailto:jzxhuang@uwaterloo.ca">jzxhuang@uwaterloo.ca</a>, or find me on these other places also located on the Internet! </p>
                 <div class="social-section">
                     <ul>
-                        <li><a href="mailto:jzxhuang@uwaterloo.ca" class="btn btn-lime" target="_blank" role="button"><i class="fa fa-envelope left"></i> E-mail</a></li>
-                        <li><a href="https://www.linkedin.com/in/jzxhuang/" class="btn btn-primary" rel="external" target="_blank" role="button"><i class="fa fa-linkedin left"></i> LinkedIn</a></li>
-                        <li><a href="https://github.com/jzxhuang" class="btn btn-mdb" target="_blank" rel="external" role="button"><i class="fa fa-github left"></i> Github</a></li>
+                        <li><a href="mailto:jzxhuang@uwaterloo.ca" class="btn btn-lime" target="_blank" role="button"><i class="fa fa-envelope left"></i><span class="hidden-sm-down"> E-mail</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/jzxhuang/" class="btn btn-primary" rel="external" target="_blank" role="button"><i class="fa fa-linkedin left"></i><span class="hidden-sm-down"> LinkedIn</span></a></li>
+                        <li><a href="https://github.com/jzxhuang" class="btn btn-mdb" target="_blank" rel="external" role="button"><i class="fa fa-github left"></i> <span class="hidden-sm-down"> Github</span></a></li>
                     </ul>
                 </div>
             </div>
