@@ -10,24 +10,33 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 300;
   margin: 0;
 }
-.h2about{
-    font-size: 2.1em;
-    padding-bottom: 0.15em;
+.h2-section{
+    font-size: 2.1rem;
+    padding-bottom: 0.18rem;
     font-weight: 400;
 }
 .h-footer{
-    padding-bottom: 0.42em;
+    padding-bottom: 0.42rem;
     color: #EEC856;
+}
+.h4-accordion{
+    font-size: 1.35rem;
+/*    font-family: "Roboto", sans-serif;*/
+    padding-bottom: 0.5rem;
 }
 .roboto-nav{
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 p{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 1.02em;
+    font-size: 1.02rem;
+}
+p.text-accordion{
+    font-family: "Roboto", sans-erif;
+    font-size: 1.06rem;
 }
 
 /* Necessary for full page carousel*/
@@ -60,19 +69,18 @@ html, body, .view {
 .carousel-control-prev:hover, .carousel-control-next:hover{
     color:#EEC856;
     opacity: 0.9;
-    font-size: 1.34em;
+    font-size: 1.34rem;
 }
 
 .carousel-heading{
-    height: 17em;
-    width: 48em;
+    height: 17rem;
+    width: 48rem;
 }
 @media (min-width: 767px){ .carousel-heading .hidden{
     opacity: 0;
     transition: all 0.62s;
     }
 }
-
 
 /*NAVBAR*/
 .navbar {
@@ -155,7 +163,7 @@ header .navbar.pastcarousel .navbar-collapse.show .nav-link.active{
 header .navbar.pastcarousel .navbar-brand{
     padding-top: 15px;
     padding-left: 12px;
-    font-size: 1.1em;
+    font-size: 1.1rem;
 }
 header .navbar.pastcarousel .fa-bars{
     padding-top:15px;
@@ -182,6 +190,9 @@ header .navbar.pastcarousel .fa-bars:hover{
 .card.accordion, .card-header.accordion{
     background-color: transparent;
     box-shadow: none;
+}
+.card.accordion .card-block{
+    padding-left: 1.7rem;
 }
 .card-header.accordion a.collapsed{
     color: black;
@@ -229,7 +240,13 @@ footer.page-footer a:hover{
     text-align: center;
     }}
 .img-fluid.aboutphoto{
-    height:20em;
-    width:20em;
+    height:20rem;
+    width:20rem;
     margin: 6% auto 2% auto;
+}
+.overlay .mask.lightbox{
+    cursor: pointer;
+}
+.figure-img{
+    margin-bottom: 0.15rem;
 }
