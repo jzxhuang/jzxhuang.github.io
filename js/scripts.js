@@ -82,5 +82,14 @@ $('div .carousel-heading').hover(function(){
     $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').addClass('hidden');
 });
 });
+    //Modal
+    $('#modalGame').on('hidden.bs.modal', function () {
+    $('#modalGame iframe').removeAttr('src');
+});
+    $('a.toggleModalGame').click(function () {
+        var src = 'https://www.youtube.com/embed/GD40LZr9vpM?ecver=1';
+        $('#modalGame').modal('show');
+        $('#modalGame iframe').attr('src', src);
+    });
     
 });

@@ -230,7 +230,7 @@ footer.page-footer a:hover{
     background-color: moccasin;
 }
 #projects{
-    background-color: aqua;
+    background-color: #18FFFF;
 }
 #resume{
     background-color: lavender;
@@ -247,6 +247,19 @@ footer.page-footer a:hover{
 .overlay .mask.lightbox{
     cursor: pointer;
 }
-.figure-img{
-    margin-bottom: 0.15rem;
+.modal-header{
+    background-color: #33b5e5;
+    border: 0;
+}
+.modal-title {
+    padding: .2rem;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.modal-body div>p{
+    color:#616161;
+}
+.h4-modal{
+    margin: 0.35rem 0;
 }
