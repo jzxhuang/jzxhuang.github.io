@@ -26,11 +26,11 @@
 <!--                <span class="navbar-toggler-icon" aria-hidden="true"></span>-->
                 <span class="fa fa-bars fa-lg" aria-hidden="true"></span>
             </button>
-            <a class="navbar-brand roboto-nav" href="#home">
+            <a class="navbar-brand navbar-font" href="#home">
                 <strong>Home Logo</strong>
             </a>
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav ml-auto roboto-nav">
+                <ul class="nav navbar-nav ml-auto navbar-font">
                     <li class="nav-item">
                         <a class="nav-link active waves-light" href="#home"><strong>Home</strong></a>
                     </li>
@@ -54,23 +54,24 @@
         <ol class="carousel-indicators">
             <li data-target="#featured" data-slide-to="0" class="active"></li>
             <li data-target="#featured" data-slide-to="1"></li>
-            <li data-target="#featured" data-slide-to="2"></li>
+<!--            <li data-target="#featured" data-slide-to="2"></li>-->
         </ol>
         <!--/.Indicators-->
 
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
-            <!--First slide-->
+            <!--Third slide-->
             <div class="carousel-item active">
                 <!--Mask color-->
                 <div class="view hm-black-light">
                     <!--Video source-->
-                    <video class="video-full" poster="img/snowboardss.jpg" autoplay loop>
-                        <source src="video/snowboardWebM.webm" type="video/webm">
-                        <source src="video/snowboard.mp4" type="video/mp4">
+                    <video class="video-full" poster="img/divess.jpg" autoplay loop muted>
+                        <source src="video/diveWebM.webm" type="video/webm">
+                        <source src="video/dive.mp4" type="video/mp4">
                     </video>
-                    <div class="full-bg-img"></div>
+                    <div class="mask"></div>
                 </div>
+
                 <!--Caption-->
                 <div class="carousel-caption">
                     <div class="flex-center">
@@ -80,21 +81,21 @@
                             <li>
                                 <h1 class="hidden">Welcome to my life</h1>
                             </li>
-                                <li>
-                                <h4 class="h4-responsive hidden">Cool quote about myself</h4>
+                            <li>
+                                <h4 class="h4-responsive hidden">Hopefully you don't find it too boring here</h4>
                             </li>
                             <li>
-                                <a href="#about" class="z-depth-1 btn btn-primary hidden">About Me</a>
-                                <a href="#resume" class="z-depth-1 btn btn-primary hidden">My Resume</a>
+                                <a href="#about" class="z-depth-2 btn btn-cyan btn hidden">Learn About Me</a>
+                                <a href="#resume" class="z-depth-2 btn btn-cyan btn hidden">See My Resume</a>
                             </li>
                             </div>
                             </div>
                         </ul>
                     </div>
                 </div>
-                <!--Caption-->
+                <!--/.Caption-->
             </div>
-            <!--/First slide-->
+            <!--/Third slide-->
 
             <!--Second slide-->
             <div class="carousel-item">
@@ -116,10 +117,10 @@
                                 <h1 class="hidden">I'm a developer</h1>
                             </li>
                             <li>
-                                <h4 class="h4-responsive hidden">Games, cars, nanobots, and more</h4>
+                                <h4 class="h4-responsive hidden">I've worked on games, cars, nanobots, &amp; more</h4>
                             </li>
                             <li>
-                                <a href="#projects" class="z-depth-2 btn btn-primary btn-lg hidden">My Projects</a>
+                                <a href="#projects" class="z-depth-2 btn btn-blue-grey btn hidden">Check Out My Projects</a>
                             </li>
                             </div>
                             </div>
@@ -130,41 +131,7 @@
             </div>
             <!--/Second slide-->
 
-            <!--Third slide-->
-            <div class="carousel-item">
-                <!--Mask color-->
-                <div class="view hm-black-light">
-                    <!--Video source-->
-                    <video class="video-full" poster="img/divess.jpg" autoplay loop muted>
-                        <source src="video/diveWebM.webm" type="video/webm">
-                        <source src="video/dive.mp4" type="video/mp4">
-                    </video>
-                    <div class="mask"></div>
-                </div>
-
-                <!--Caption-->
-                <div class="carousel-caption">
-                    <div class="flex-center">
-                        <ul>
-                            <div class="row carousel-heading justify-content-center">
-                            <div class="col align-self-center">
-                            <li>
-                                <h1 class="hidden">Some headline</h1>
-                            </li>
-                            <li>
-                                <h4 class="h4-responsive hidden">Check out my food and travel adventures</h4>
-                            </li>
-                            <li>
-                                <a href="#projects" class="z-depth-2 btn btn-primary btn-lg hidden">Button text</a>
-                            </li>
-                            </div>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-                <!--/.Caption-->
-            </div>
-            <!--/Third slide-->
+            
         </div>
         <!--/.Slides-->
 
@@ -183,15 +150,14 @@
 	    
     <main>
     <div class="page pt-1 pb-4" id="about">
-    <div class="container pt-2 pb-3">
-    <div class="row align-items-center wow fadeIn" data-wow-delay="0.18s">
+    <div class="container pt-2 pb-3 wow fadeIn" data-wow-delay="0.2s">
+    <div class="row align-items-center">
         <div class="col-lg-4">
             <img src="img/balloonphoto.jpg" class="rounded-circle img-fluid aboutphoto" alt="Photo of myself holding yellow ballon">
         </div>
         <div class="center-md-down col-lg-7 offset-lg-1 mt-lg-4 pt-md-2 pt-sm-1">
-            <h1 class="mb-1" style="font-size:58px; font-weight: 400;">Jeffrey Huang</h1>
-            <h4 class="blue-grey-text mb-lg-1 mb-sm-0"><i>Ideas Start Here ... </i></h4>
-            <br>
+            <h1 style="font-size:58px; font-weight: 400;">Jeffrey Huang</h1>
+            <h4 class="blue-grey-text py-3"><i>Ideas Start Here... </i></h4>
             <p class="h5-responsive">Hey there! I'm a computer engineering student studying at the University of Waterloo. Aside from tinkering and coding, my favourite things to do are  travelling, snowboarding, and trying new food. Since you're on my website, you probably want to know a little about me, so I'll try my best to introduce myself!</p>
         </div>
         </div>
@@ -211,7 +177,25 @@
         </div>
         <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="card-block">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                <p>I was going to make a cool and interactive timeline, but it was too much work, so instead you get to read static text!</p>
+                <ul style="list-style-type:none">
+                    <li>
+                        <p><strong>1998:</strong> My story begins on June 2, 1998 in Shanghai, China. After more than half a day of struggling inside the womb (poor mom), I finally burst into the world, healthy and ready to experience life to the fullest.</p>
+                    </li>
+                    <li>
+                        <p><strong>2002:</strong> In November of 2002, my family moved to Canada to begin a new life. This is the easily the most impact any single event has had on my life. Growing up in Canada has opened up a world of freedom and opportunity for me that I would not be able to experience in China.</p>
+                    </li>
+                    <li>
+                        <p><strong></strong></p>
+                    </li>
+                    <li>
+                        <p><strong>2007:</strong> Sister is born.</p>
+                    </li>
+                    <li>
+                        <p><strong></strong></p>
+                    </li>
+                </ul>
+                <p>Oh yeah, in case you're wondering where the 'z' and 'x' come from in jzxhuang, it's from my middle name, Zhen Xuan, which comes from my Chinese name, <span lang="zh"> 黃真軒 </span>. Good luck pronouncing that!</p>
             </div>
         </div>
     </div>
@@ -265,7 +249,7 @@
                 <p class="text-accordion">
                 Being a small, skinny guy, it probably doesn't seem like I eat a lot - but I <em>love</em> food. Specifically, I like trying new, different foods. Don't get me wrong though, I'm not one of those picky food connoisseurs. I love amazing food, but I'll settle for anything that tastes good, even if it's short of perfect. It doesn't have to be fancy or expensive - some Kraft Dinner gets the job done when you're in a pinch!</p>
                 <p class="text-accordion">
-                Oh, and I'll eat pretty much anything. Something may seem nasty to you, but to me, as long as it tastes good and won't kill me, I'm cool with it! I could never settle for one favourite food, but if I had to pick a category, it would be seafood. I never really appreciated seafood until I tried fresh lobster from the Atlantic. Believe me, the freshness makes all the difference, and there's no going back once you've tried it.</p>
+                Oh, and I'll eat pretty much anything. Something may seem nasty to you, but to me, as long as it tastes good and won't kill me, I'm cool with it! I could never settle for one favourite food, but if I had to pick a category, it would be seafood. </p>
             </div>
             <div class="col-lg-5 pl-lg-2 view overlay hm-white-slight">
                 <a href="img/lobster.jpg" data-toggle="lightbox" data-gallery="passions-gallery" data-footer="Assorted seafood platter in Gasp&eacute;, Qu&eacute;bec">

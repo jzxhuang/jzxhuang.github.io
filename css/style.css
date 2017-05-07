@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6{
 /*    font-family: "Roboto", sans-serif;*/
     padding-bottom: 0.5rem;
 }
-.roboto-nav{
-  font-family: "Roboto", sans-serif;
+.navbar-font{
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
 }
