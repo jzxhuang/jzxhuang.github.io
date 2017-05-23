@@ -124,6 +124,13 @@ header .navbar .navbar-collapse.show .nav-link.active{
 .navbar-light .navbar-nav .active>.nav-link{
     color: white;
 }
+li.nav-item{
+    padding: 0 7px;
+}
+header .show li.nav-item,header .collapsing li.nav-item{
+    text-align: left;
+}
+
 /*Brand*/
 .navbar-light .navbar-brand{
     color: white;
@@ -144,12 +151,15 @@ header .navbar .navbar-collapse.show .nav-link.active{
 .navbar.navbar-light .nav-item.active{
     background-color: transparent;
 }
+li i.nav-icon{
+    padding-right: 0.55rem;
+}
 
 /*Nav after carousel*/
 header .navbar.pastcarousel{
     background-color: midnightblue;
-    padding-top: 0px;
-    padding-bottom:10px;
+    padding-top: 1px;
+    padding-bottom:14px;
     -moz-transition: all .4s;
     -webkit-transition: all .4s;
     transition: all .4s ease-out;
@@ -262,4 +272,7 @@ footer.page-footer a:hover{
 }
 .h4-modal{
     margin: 0.35rem 0;
+}
+div.social-section{
+    padding-top: 0.4rem;
 }
