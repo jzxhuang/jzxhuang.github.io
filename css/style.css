@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6{
     padding-bottom: 0.42rem;
     color: #EEC856;
 }
+.blue-font{
+    color: midnightblue;
+}
 .h4-accordion{
     font-size: 1.35rem;
 /*    font-family: "Roboto", sans-serif;*/
@@ -209,10 +212,10 @@ header .navbar.pastcarousel .fa-bars:hover{
     transition: all 0.15s;
 }
 .card-header.accordion a{
-    color: #607d8b;
+    color: midnightblue;
 }
 .card-header.accordion a:hover{
-    color: #607d8b;
+    color: midnightblue;
     transition: all 0.15s;
 }
 .card-header.accordion a.collapsed .fa{
@@ -240,7 +243,7 @@ footer.page-footer a:hover{
     background-color: moccasin;
 }
 #projects{
-    background-color: #18FFFF;
+    background-color: #65f7e3;
 }
 #resume{
     background-color: lavender;
@@ -258,7 +261,7 @@ footer.page-footer a:hover{
     cursor: pointer;
 }
 .modal-header{
-    background-color: #33b5e5;
+    background-color: #43cfbc;
     border: 0;
 }
 .modal-title {
