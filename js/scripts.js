@@ -3,11 +3,11 @@ $(function() {
   "use strict";
 
     var topoffset = 75; //variable for menu height
-    var topoffset2 = 3;
+    var topoffset2 = 35; //scroll offset
     var wheight =$(window).height();    //get height of window
     $('.fullheight').css('height', wheight);    //set to window height
     // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-    var mainbottom = $('#featured').offset().top + $('#featured').height() + topoffset;
+    var mainbottom = $('#featured').offset().top + $('#featured').height();
     
     //Initialize scroll transitions
     new WOW().init(); 
@@ -67,7 +67,7 @@ $('a[href*="#"]')
     // changing navbar appearnce, 
     $(window).on('scroll',function(){
         // we round here to reduce a little workload
-        stop = Math.round($(window).scrollTop());
+        stop = Math.round($(window).scrollTop())+50;
         if (stop > mainbottom) {
             $('header nav').addClass('pastcarousel hoverable navhover');
         } else {
