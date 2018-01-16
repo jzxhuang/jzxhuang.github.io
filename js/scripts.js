@@ -75,13 +75,13 @@ $('a[href*="#"]')
        }
     });
     //Carousel header hover
-    $( function() {
-$('div .carousel-heading').hover(function(){
-    $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').removeClass('hidden');
-}, function() {
-    $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').addClass('hidden');
-});
-});
+//    $( function() {
+//$('div .carousel-heading').hover(function(){
+//    $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').removeClass('hidden');
+//}, function() {
+//    $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').addClass('hidden');
+//});
+//});
     //Modal
     $('#modalGame').on('hidden.bs.modal', function () {
     $('#modalGame iframe').removeAttr('src');

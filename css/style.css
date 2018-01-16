@@ -28,9 +28,10 @@ h1, h2, h3, h4, h5, h6{
     padding-bottom: 0.5rem;
 }
 .navbar-font{
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: white;
 }
 p{
     font-family: "Roboto", sans-serif;
@@ -41,6 +42,11 @@ p.text-accordion{
     font-family: "Roboto", sans-erif;
     font-size: 1.06rem;
 }
+h1.title{
+    font-weight: 300;
+    font-size: 3.6rem;
+}
+/* / FONT STYLING */
 
 /* Necessary for full page carousel*/
 html, body, .view {
@@ -129,6 +135,7 @@ header .navbar .navbar-collapse.show .nav-link.active{
 }
 li.nav-item{
     padding: 0 7px;
+    color: white;
 }
 header .show li.nav-item,header .collapsing li.nav-item{
     text-align: left;
@@ -278,4 +285,21 @@ footer.page-footer a:hover{
 }
 div.social-section{
     padding-top: 0.4rem;
+}
+
+.center-element {
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  -webkit-transform: perspective(1px) translateY(-50%);
+  -ms-transform: perspective(1px) translateY(-50%);
+}
+
+.chevron{
+    color: lavender;
+    transition: all 0.2s;
+}
+a.chevron:hover{
+    color: #EEC856;
+    transition: all 0.2s;
 }
