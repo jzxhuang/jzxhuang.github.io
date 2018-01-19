@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb_custom.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.4/css/mdb.min.css" rel = "stylesheet">
     <!-- Lightbox plugin -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css" rel="stylesheet">
     <!-- My styles -->
@@ -36,7 +37,7 @@
         <!--Navbar-->
         <nav class="navbar fixed-top navbar-toggleable-sm navbar-light z-depth-1">
             <div class="container">
-                <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" id="hamburgerButton">
                 <span class="fa fa-bars fa-lg navbar-hamburger" aria-hidden="true"></span>
             </button>
                 <a class="navbar-brand navbar-font" href="#home">
@@ -179,10 +180,10 @@
 
     <main>
         <!--About Page-->
-        <div class="page pt-1 pb-4" id="about">
-            <div class="container pt-2 pb-3 wow fadeIn" data-wow-delay="0.2s">
-                <div class="row align-items-center">
-                    <div class="col-lg-4">
+        <div class="page pt-1 pb-5" id="about">
+            <div class="container pt-5 pb-4 wow fadeIn" data-wow-delay="0.2s">
+                <div class="row">
+                    <div class="col-lg-4 center-md-down">
                         <img src="http://assets.jzxhuang.com/images/about/balloonphoto.jpg" class="rounded-circle img-fluid aboutphoto" alt="Photo of myself holding a yellow balloon">
                     </div>
                     <div class="center-md-down col-lg-7 offset-lg-1 mt-lg-4 pt-md-2 pt-sm-1">
@@ -329,7 +330,7 @@
 
         <!--/.Projects Page-->
         <div class="page py-5" id="projects">
-            <div class="container py-4">
+            <div class="container py-3">
                 <div class="row mb-1 wow fadeIn" data-wow-delay="0.1s">
                     <div class="col">
                         <h2 class="h2-section">Projects</h2>
@@ -425,8 +426,8 @@
         <!--./Projects Page-->
 
         <!--Resume Page-->
-        <div class="page pb-5" id="resume">
-            <div class="container pt-4">
+        <div class="page py-5" id="resume">
+            <div class="container py-4">
                 <div class="row wow fadeIn" data-wow-delay="0.18s">
                     <div class="col-xl-12">
                         <h2 class="h2-section">Resume</h2>
@@ -542,12 +543,13 @@
                 <!--First column-->
                 <div class="col-md-9 ">
                     <h4 class="title-responsive h-footer text-center"><strong>Get in Touch</strong></h4>
-                    <p class="text-muted white-text text-center mb-0">Do you have a question? Are you secretly my long last twin? Whatever it may be, I'd love to talk to you! Send me an e-mail me at <a class="email" target="_blank" href="mailto:jzxhuang@uwaterloo.ca">jzxhuang@uwaterloo.ca</a>, or find me at these other places also located on the Internet! </p>
-                    <div class="social-section">
+                    <p class="white-text text-center mb-0 footer-paragraph">Do you have a question? Are you secretly my long last twin? Whatever it may be, I'd love to talk to you! Send me an e-mail me at <a class="email" target="_blank" href="mailto:jzxhuang@uwaterloo.ca">jzxhuang@uwaterloo.ca</a>, or find me at these other places also located on the Internet! </p>
+                    <div class="social-section text-center">
                         <ul>
-                            <li><a href="mailto:jzxhuang@uwaterloo.ca" class="btn btn-secondary" target="_blank" role="button"><i class="fa fa-envelope left"></i><span class="hidden-sm-down"> E-mail</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/jzxhuang/" class="btn btn-primary" rel="external" target="_blank" role="button"><i class="fa fa-linkedin left"></i><span class="hidden-sm-down"> LinkedIn</span></a></li>
-                            <li><a href="https://github.com/jzxhuang" class="btn btn-mdb" target="_blank" rel="external" role="button"><i class="fa fa-github left"></i> <span class="hidden-sm-down"> Github</span></a></li>
+                            <li><a href="mailto:jzxhuang@uwaterloo.ca" class="btn btn-default" target="_blank" role="button"><i class="fa fa-envelope left"></i><span class="hidden-sm-down"> E-mail</span></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/jzxhuang/" class="btn btn-linkedin" rel="external" target="_blank" role="button"><i class="fa fa-linkedin left"></i><span class="hidden-sm-down"> LinkedIn</span></a></li>
+                            <li><a href="https://github.com/jzxhuang" class="btn btn-git" target="_blank" rel="external" role="button"><i class="fa fa-github left"></i> <span class="hidden-sm-down"> Github</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -578,12 +580,16 @@
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+    
+    
     <!-- Bootstrap tooltips -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.4/js/mdb.min.js"></script>
     <!-- Lightbox plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.js"></script>
     <!-- My scripts -->

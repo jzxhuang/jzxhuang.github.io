@@ -1,62 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400,500');
 
 /*FONT STYLING*/
-
 body {
     font-family: "Roboto", sans-serif;
     position: relative;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     margin: 0;
 }
-
 .h2-section {
     font-size: 2.1rem;
     padding-bottom: 0.18rem;
     font-weight: 400;
 }
-
 .h-footer {
     padding-bottom: 0.42rem;
     color: #EEC856;
 }
-
 .blue-font {
     color: midnightblue;
 }
-
 .h4-accordion {
     font-size: 1.35rem;
     /*    font-family: "Roboto", sans-serif;*/
     padding-bottom: 0.5rem;
 }
-
 .navbar-font {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     color: white;
 }
-
 p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 1.02rem;
 }
-
 p.text-accordion {
     font-family: "Roboto", sans-erif;
     font-size: 1.06rem;
 }
-
  h1.title {
     font-weight: 300;
 }
@@ -64,60 +49,48 @@ p.text-accordion {
 @media (min-width: 768px) {h1.title {font-size: 3.8rem;}}
 @media (min-width: 992px) {h1.title {font-size: 4rem;}}
 @media (min-width: 1200px) {h1.title {font-size: 4.75rem;}}
+p.footer-paragraph{
+    font-family: "Open-Sans", sans-serif;
+}
 /* ./FONT STYLING */
 
 /* Necessary for full page carousel*/
-
-html,
-body,
-.view {
+html,body,.view {
     height: 100%;
     width: 100%;
 }
 
 /* Carousel*/
-
-.carousel,
-.carousel-item,
-.active {
+.carousel,.carousel-item,.active {
     height: 100%;
 }
-
 .carousel-inner {
     height: 100%;
 }
-
 .flex-center {
     color: #fff;
 }
-
 .carousel-caption {
     height: 100%;
     padding-top: 7rem;
 }
 
 /*CAROUSEL STYLING*/
-
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev,.carousel-control-next {
     opacity: 0.7;
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     transition: all .2s;
 }
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.carousel-control-prev:hover,.carousel-control-next:hover {
     color: #EEC856;
     opacity: 0.9;
     font-size: 1.34rem;
 }
-
 .carousel-heading {
     height: 17rem;
     width: 48rem;
 }
-
 @media (min-width: 767px) {
     .carousel-heading .hidden {
         opacity: 0;
@@ -126,7 +99,6 @@ body,
 }
 
 /*NAVBAR*/
-
 .navbar {
     padding: 25px 0;
     -moz-transition: all 1s;
@@ -134,20 +106,21 @@ body,
     transition: all .5s ease-out;
     box-shadow: 0 0;
 }
-
 .navbar.navbar-light .navbar-toggler-icon {
     cursor: pointer;
 }
-
 .navbar-toggler-right {
     padding-right: 15px;
 }
-
-header .navbar .fa-bars {
-    color: rgba(255, 255, 255, .5);
+@media (max-width: 768px){.collapse ul>li>a.nav-link.waves-light.waves-effect.waves-light{
+    margin-left: 12px;
+    }
 }
-
-header .navbar .fa-bars:hover {
+header .navbar .fa-bars, header .navbar .fa-times {
+/*    color: rgba(255, 255, 255, .5);*/
+    color: white;
+}
+header .navbar .fa-bars:hover, header .navbar .fa-times:hover {
     cursor: pointer;
     color: #EEC856;
 }
@@ -164,7 +137,20 @@ header .navbar .navbar-collapse.show .nav-link.active {
     color: white;
     padding: 4px 10px;
 }
-
+header .navbar.navbar-light .navbar-nav a.nav-link.waves-light.waves-effect {
+    color: white;
+    padding: 4px 10px;
+    transition: .35s;
+}
+header .navbar.navbar-light .navbar-nav a.nav-link.waves-light.waves-effect.active{
+    color: #EEC856;
+    transition: .35s;
+}
+header .navbar.navbar-light .navbar-nav a.nav-link.waves-light.waves-effect:hover{
+    color: #EEC856;
+    font-weight: bold;
+    transition: .35s;
+}
 .navbar-light {
     border: none;
 }
@@ -187,6 +173,7 @@ header .show li.nav-item,
 header .collapsing li.nav-item {
     text-align: left;
 }
+
 
 /*Brand*/
 
@@ -242,13 +229,13 @@ header .navbar.pastcarousel .navbar-brand {
     font-size: 1.1rem;
 }
 
-header .navbar.pastcarousel .fa-bars {
+header .navbar.pastcarousel .fa-bars,header .navbar.pastcarousel .fa-times {
     padding-top: 15px;
     color: white;
     transition: all 0.15s;
 }
 
-header .navbar.pastcarousel .fa-bars:hover {
+header .navbar.pastcarousel .fa-bars:hover, header .navbar.pastcarousel .fa-times:hover {
     color: #EEC856;
     transition: all 0.15s;
 }
@@ -274,7 +261,10 @@ header .navbar.pastcarousel .fa-bars:hover {
     background-color: transparent;
     box-shadow: none;
 }
-
+div.card.accordion{
+    border-bottom-color: black;
+    border-style: none none solid;
+}
 .card.accordion .card-block {
     padding-left: 1.7rem;
 }
@@ -302,37 +292,34 @@ header .navbar.pastcarousel .fa-bars:hover {
 }
 
 /*Footer*/
-
 footer.page-footer {
     background-color: midnightblue;
     margin-top: 0px;
     padding-top: 23px;
 }
-
 footer.page-footer a.email {
     color: turquoise;
 }
-
 footer.page-footer a:hover {
     color: #EEC856;
 }
+footer.page-footer .social-section ul a.btn{
+    margin-left: auto;
+    padding-left: 34px;
+}
 
 /*Background of page sections*/
-
 #about {
     background-color: moccasin;
 }
-
 #projects {
     background-color: #65f7e3;
 }
-
 #resume {
     background-color: lavender;
 }
 
 /*Other*/
-
 @media (max-width: 991px) {
     .center-md-down {
         text-align: center;
@@ -409,4 +396,11 @@ span.keyword {
 #wordTwo{
     width: 75px;
     justify-content: flex-start;
+}
+
+.btn-git{
+    background-color: #333 !important;
+}
+.btn-linkedin{
+    background-color: #0077B5;
 }

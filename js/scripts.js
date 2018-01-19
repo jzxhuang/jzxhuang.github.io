@@ -5,6 +5,8 @@ $(function () {
     const words = ["Developer", "Innovator", "Explorer", "Student", "Programmer", "Engineer", "Adventurer", "Leader", "Enthusiast"];
     let arrayIndex = 2;
     let wordIndex = 0;
+    
+    const navbarOffset = 50;
 
     var topoffset = 75; //variable for menu height
     var topoffset2 = 35; //scroll offset
@@ -70,7 +72,7 @@ $(function () {
     // changing navbar appearnce, 
     $(window).on('scroll', function () {
         // we round here to reduce a little workload
-        stop = Math.round($(window).scrollTop()) + 50;
+        stop = Math.round($(window).scrollTop()) + 60;
         if (stop > mainbottom) {
             $('header nav').addClass('pastcarousel hoverable navhover');
         } else {
@@ -94,7 +96,18 @@ $(function () {
         $('#modalGame').modal('show');
         $('#modalGame iframe').attr('src', src);
     });
+    
+    // toggle between 'X' and hamburger menu 
+    $('#hamburgerButton').click(function () {
+        let $this = $(this);
+        if ($(this).children().hasClass("fa-bars")){
+            $(this).children().removeClass("fa-bars").addClass("fa-times");    
+        } else {
+            $(this).children().removeClass("fa-times").addClass("fa-bars");
+        }
+    });
 
+    //swap keyword function
     function swap() {
         let wordSelect;
         if (wordIndex === 0) {
@@ -110,6 +123,7 @@ $(function () {
         wordIndex = (wordIndex + 1) % 2;
     }
 
+    //randomize array order (currently unused)
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * (i + 1));
