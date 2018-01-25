@@ -112,9 +112,8 @@ html,body,.view {
 .navbar-toggler-right {
     padding-right: 15px;
 }
-@media (max-width: 768px){.collapse ul>li>a.nav-link.waves-light.waves-effect.waves-light{
-    margin-left: 12px;
-    }
+.navbar-toggler-left{
+    padding-left: 15px;
 }
 header .navbar .fa-bars, header .navbar .fa-times {
 /*    color: rgba(255, 255, 255, .5);*/
