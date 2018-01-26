@@ -2,20 +2,20 @@ $(function () {
 
     "use strict";
     // Fading in/out of keywords
-    const words = ["Developer", "Innovator", "Explorer", "Student", "Programmer", "Engineer", "Adventurer", "Leader", "Enthusiast"];
+    const words = ["Developer", "Innovator", "Explorer", "Student", "Programmer", "Foodie", "Engineer", "Leader", "Adventurer"];
     let arrayIndex = 2;
     let wordIndex = 0;
     
     const navbarOffset = 50;
 
-    var topoffset = 75; //variable for menu height
-    var topoffset2 = 35; //scroll offset
+    const topoffset = 75; //variable for menu height
+    const topoffset2 = 35; //scroll offset
     var wheight = $(window).height(); //get height of window
     $('.fullheight').css('height', wheight); //set to window height
     // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
     var mainbottom = $('#featured').offset().top + $('#featured').height();
 
-    //Initialize scroll transitions
+    //Initialize MDB scroll animations (fade in)
     new WOW().init();
 
     //Intialize lightbox
@@ -23,8 +23,16 @@ $(function () {
         event.preventDefault();
         $(this).ekkoLightbox();
     });
+    
+    // SimpleLightbox
+    const lightboxOptions = {
+        showCounter: false,
+        animationSlide: false,
+        history: false
+    };
+    let lightboxGallery = $('.lightbox-gallery a').simpleLightbox(lightboxOptions);
 
-    //Scroll animations
+    //Smooth scroll transitions
     // Select all links with hashes
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
@@ -79,14 +87,7 @@ $(function () {
             $('header nav').removeClass('pastcarousel hoverable navhover');
         }
     });
-    //Carousel header hover
-    //    $( function() {
-    //$('div .carousel-heading').hover(function(){
-    //    $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').removeClass('hidden');
-    //}, function() {
-    //    $('.carousel-heading a, .carousel-heading h1, .carousel-heading h4').addClass('hidden');
-    //});
-    //});
+
     //Modal
     $('#modalGame').on('hidden.bs.modal', function () {
         $('#modalGame iframe').removeAttr('src');
