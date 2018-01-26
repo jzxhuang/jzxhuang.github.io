@@ -8,8 +8,9 @@ $(function () {
     
     const navbarOffset = 50;
 
-    const topoffset = 75; //variable for menu height
-    const topoffset2 = 35; //scroll offset
+    let $root = $('html, body');
+    const topoffset = 75; // scrollspy navbar offset
+    const smoothScrollOffset = 33; // smoothscroll offset
     var wheight = $(window).height(); //get height of window
     $('.fullheight').css('height', wheight); //set to window height
     // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
@@ -35,40 +36,16 @@ $(function () {
     //Smooth scroll transitions
     // Select all links with hashes
     $('a[href*="#"]')
-        // Remove links that don't actually link to anything
+        // Ignore select links
         .not('[href="#"]')
         .not('[href="#0"]')
         .not('[href="#featured"]')
         .not(".accordion")
         .click(function (event) {
-            // On-page links
-            if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                location.hostname == this.hostname
-            ) {
-                // Figure out element to scroll to
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                // Does a scroll target exist?
-                if (target.length) {
-                    // Only prevent default if animation is actually gonna happen
-                    event.preventDefault();
-                    $('html, body').animate({
-                        scrollTop: target.offset().top - topoffset2 + 2
-                    }, 450, function () {
-                        // Callback after animation
-                        // Must change focus!
-                        var $target = $(target);
-                        $target.focus();
-                        if ($target.is(":focus")) { // Checking if the target was focused
-                            return false;
-                        } else {
-                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                            $target.focus(); // Set focus again
-                        };
-                    });
-                }
-            }
+            // jQuery smooth scroll, prevent changing of URL
+            event.preventDefault();
+            $root.animate({scrollTop: $($.attr(this, 'href')).offset().top - smoothScrollOffset}, 500);
+        return false;
         });
 
     //ScrollSpy
