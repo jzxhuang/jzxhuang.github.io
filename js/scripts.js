@@ -1,5 +1,4 @@
 $(function () {
-
     "use strict";
     // Fading in/out of keywords
     const words = ["Developer", "Innovator", "Explorer", "Student", "Programmer", "Foodie", "Engineer", "Leader", "Adventurer"];
@@ -13,17 +12,14 @@ $(function () {
     const smoothScrollOffset = 33; // smoothscroll offset
     var wheight = $(window).height(); //get height of window
     $('.fullheight').css('height', wheight); //set to window height
-    // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+    // Get the value of the bottom of the #main element by adding the offset of that element plus its height
     var mainbottom = $('#featured').offset().top + $('#featured').height();
 
-    //Initialize MDB scroll animations (fade in)
+    // Initialize lazy load
+    let myLazyLoad = new LazyLoad();
+    
+    // Initialize MDB scroll animations (fade in)
     new WOW().init();
-
-    //Intialize lightbox
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-        event.preventDefault();
-        $(this).ekkoLightbox();
-    });
     
     // SimpleLightbox
     const lightboxOptions = {
@@ -32,11 +28,11 @@ $(function () {
         history: false
     };
     let lightboxGallery = $('.lightbox-gallery a').simpleLightbox(lightboxOptions);
+    let aboutLightbox = $('.lightbox-about a').simpleLightbox(lightboxOptions);
 
-    //Smooth scroll transitions
-    // Select all links with hashes
+    // Smooth scroll transitions
+    // Select all links with hashes, ignoring select links
     $('a[href*="#"]')
-        // Ignore select links
         .not('[href="#"]')
         .not('[href="#0"]')
         .not('[href="#featured"]')
@@ -48,13 +44,13 @@ $(function () {
         return false;
         });
 
-    //ScrollSpy
+    // ScrollSpy
     $('body').scrollspy({
         target: '.navbar-light',
         offset: topoffset
     });
 
-    // changing navbar appearnce, 
+    // Changing navbar appearnce, 
     $(window).on('scroll', function () {
         // we round here to reduce a little workload
         stop = Math.round($(window).scrollTop()) + 60;
@@ -65,7 +61,7 @@ $(function () {
         }
     });
 
-    //Modal
+    // Modal
     $('#modalGame').on('hidden.bs.modal', function () {
         $('#modalGame iframe').removeAttr('src');
     });
@@ -75,7 +71,7 @@ $(function () {
         $('#modalGame iframe').attr('src', src);
     });
     
-    // toggle between 'X' and hamburger menu 
+    // Toggle between 'X' and hamburger menu 
     $('#hamburgerButton').click(function () {
         let $this = $(this);
         if ($(this).children().hasClass("fa-bars")){
@@ -85,7 +81,7 @@ $(function () {
         }
     });
 
-    //swap keyword function
+    // Swap keyword function
     function swap() {
         let wordSelect;
         if (wordIndex === 0) {
@@ -101,7 +97,7 @@ $(function () {
         wordIndex = (wordIndex + 1) % 2;
     }
 
-    //randomize array order (currently unused)
+    // Randomize array order (currently unused)
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * (i + 1));
