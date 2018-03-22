@@ -1,5 +1,7 @@
 $(function () {
     "use strict";
+    // Initialize MDB scroll animations (fade in)
+    new WOW().init();
     
     // Fading in/out of keywords
     const words = ["Developer", "Innovator", "Explorer", "Student", "Programmer", "Foodie", "Engineer", "Leader", "Adventurer"];
@@ -18,9 +20,6 @@ $(function () {
 
     // Initialize lazy load
     let myLazyLoad = new LazyLoad();
-    
-    // Initialize MDB scroll animations (fade in)
-    new WOW().init();
     
     // SimpleLightbox
     const lightboxOptions = {
@@ -110,7 +109,9 @@ $(function () {
     //Slick Card Carousel, responsive, 3 slides on lg & up
     $('.slick-test').slick({
         dots: true,
+        centerMode: true,
         slidesToShow: 3,
+        lazyload: 'ondemand',
         responsive:[
             {
                 breakpoint: 992,

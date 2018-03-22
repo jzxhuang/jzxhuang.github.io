@@ -175,7 +175,6 @@ header .collapsing li.nav-item {
 
 
 /*Brand*/
-
 .navbar-light .navbar-brand {
     color: white;
     padding: 3px 0;
@@ -204,7 +203,6 @@ li i.nav-icon {
 }
 
 /*Nav after carousel*/
-
 header .navbar.pastcarousel {
     background-color: midnightblue;
     padding-top: 1px;
@@ -254,7 +252,6 @@ header .navbar.pastcarousel .fa-bars:hover, header .navbar.pastcarousel .fa-time
 }
 
 /*Accordion*/
-
 .card.accordion,
 .card-header.accordion {
     background-color: transparent;
