@@ -1,5 +1,6 @@
 $(function () {
     "use strict";
+    
     // Fading in/out of keywords
     const words = ["Developer", "Innovator", "Explorer", "Student", "Programmer", "Foodie", "Engineer", "Leader", "Adventurer"];
     let arrayIndex = 2;
@@ -29,7 +30,7 @@ $(function () {
     };
     let lightboxGallery = $('.lightbox-gallery a').simpleLightbox(lightboxOptions);
     let aboutLightbox = $('.lightbox-about a').simpleLightbox(lightboxOptions);
-
+    
     // Smooth scroll transitions
     // Select all links with hashes, ignoring select links
     $('a[href*="#"]')
@@ -105,4 +106,19 @@ $(function () {
         }
     }
     setInterval(swap, 3500);
+    
+    //Slick Card Carousel, responsive, 3 slides on lg & up
+    $('.slick-test').slick({
+        dots: true,
+        slidesToShow: 3,
+        responsive:[
+            {
+                breakpoint: 992,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });
