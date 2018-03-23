@@ -7,16 +7,14 @@ $(function () {
     const words = ["Developer", "Innovator", "Explorer", "Student", "Programmer", "Foodie", "Engineer", "Leader", "Adventurer"];
     let arrayIndex = 2;
     let wordIndex = 0;
-    
-    const navbarOffset = 50;
 
     let $root = $('html, body');
     const topoffset = 75; // scrollspy navbar offset
     const smoothScrollOffset = 33; // smoothscroll offset
-    var wheight = $(window).height(); //get height of window
+    const wheight = $(window).height(); //get height of window
     $('.fullheight').css('height', wheight); //set to window height
     // Get the value of the bottom of the #main element by adding the offset of that element plus its height
-    var mainbottom = $('#featured').offset().top + $('#featured').height();
+    let mainbottom = $('#featured').offset().top + $('#featured').height();
 
     // Initialize lazy load
     let myLazyLoad = new LazyLoad();
@@ -66,7 +64,7 @@ $(function () {
         $('#modalGame iframe').removeAttr('src');
     });
     $('a.toggleModalGame').click(function () {
-        var src = 'https://www.youtube.com/embed/GD40LZr9vpM?ecver=1';
+        let src = 'https://www.youtube.com/embed/GD40LZr9vpM?ecver=1';
         $('#modalGame').modal('show');
         $('#modalGame iframe').attr('src', src);
     });
