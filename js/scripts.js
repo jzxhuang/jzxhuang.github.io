@@ -4,7 +4,7 @@ $(function () {
     new WOW().init();
     
     // Fading in/out of keywords
-    const words = ["Developer", "Innovator", "Explorer", "Student", "Programmer", "Foodie", "Engineer", "Leader", "Adventurer"];
+    const words = ["Leader", "Innovator", "Explorer", "Student", "Programmer", "Foodie", "Engineer", "Developer", "Adventurer"];
     let arrayIndex = 2;
     let wordIndex = 0;
 
@@ -102,7 +102,7 @@ $(function () {
         [array[i], array[j]] = [array[j], array[i]];
         }
     }
-    setInterval(swap, 3500);
+    setInterval(swap, 3250);
     
     //Slick Card Carousel, responsive, 3 slides on lg & up
     $('.slick-test').slick({
