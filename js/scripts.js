@@ -17,7 +17,9 @@ $(function () {
     let mainbottom = $('#featured').offset().top + $('#featured').height();
 
     // Initialize lazy load
-    let myLazyLoad = new LazyLoad();
+    let myLazyLoad = new LazyLoad({
+        elements_selector: "iframe, img"
+    });
     
     // SimpleLightbox
     const lightboxOptions = {
