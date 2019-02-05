@@ -1,2 +1,9 @@
-img/compressed
-ignored
+node_modules
+
+# Elm
+elm-stuff
+
+# VS Code
+.vscode
+
+.DS_Store

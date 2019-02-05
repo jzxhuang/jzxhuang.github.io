@@ -1,0 +1,13 @@
+footer a.footer-link {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+
+.headshot>img {
+    border-radius: 50%;
+    width: 15rem;
+}

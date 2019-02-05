@@ -1,8 +1,14 @@
 # Personal Site | jzxhuang
-My personal site. Check it out at http://jzxhuang.com.
 
-Fully responsive single-page design including a full-page video carousel, lazy loading, smooth scrolling and more.
+My personal site. Check it out at [http://jzxhuang.com][jzxhuang].
 
-Built on [Bootstrap v4](https://getbootstrap.com/), as well as [Material Design Lite for Bootstrap](https://mdbootstrap.com/), [SimpleLightbox](http://simplelightbox.com/), [vanilla-lazyload](https://github.com/verlok/lazyload) and [Slick](https://kenwheeler.github.io/slick/). 
+Static site built with these awesome technologies:
 
-Hosted on Github Pages with static content on S3 and delievered via CloudFront CDN. Tech stack is HTML, CSS, JS and jQuery.
+* [Elm]
+* [Font Awesome Icons]
+* [Github Pages]
+
+[Elm]: https://elm-lang.org/
+[jzxhuang]: http://jzxhuang.com/
+[Font Awesome Icons]: https://fontawesome.com/
+[Github Pages]: https://pages.github.com/

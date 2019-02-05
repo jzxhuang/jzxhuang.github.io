@@ -1,0 +1,23 @@
+{
+  "name": "jzxhuang.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio site.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jzxhuang/jzxhuang.github.io.git"
+  },
+  "author": "Jeffrey Huang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jzxhuang/jzxhuang.github.io/issues"
+  },
+  "homepage": "https://github.com/jzxhuang/jzxhuang.github.io#readme",
+  "devDependencies": {
+    "elm": "^0.19.0-bugfix6",
+    "elm-live": "^3.4.0",
+    "google-closure-compiler": "^20190121.0.0"
+  }
+}
