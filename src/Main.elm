@@ -71,12 +71,17 @@ main =
 viewSocialLinks : Element msg
 viewSocialLinks =
     row [ spacing 25, centerX ]
-        [ newTabLink [] { url = "https://medium.com/@jzxhuang/", label = faIcon "fab fa-medium-m" }
-        , newTabLink [] { url = "https://instagram.com/jzxhuang/", label = faIcon "fab fa-instagram" }
-        , newTabLink [] { url = "https://github.com/jzxhuang/", label = faIcon "fab fa-github" }
-        , newTabLink [] { url = "mailto:jzxhuang@edu.uwaterloo.ca", label = faIcon "far fa-envelope" }
-        , newTabLink [] { url = "https://linkedin.com/in/jzxhuang/", label = faIcon "fab fa-linkedin-in" }
+        [ newTabLink [ ariaLabel "Medium Blog" ] { url = "https://medium.com/@jzxhuang/", label = faIcon "fab fa-medium-m" }
+        , newTabLink [ ariaLabel "Instagram" ] { url = "https://instagram.com/jzxhuang/", label = faIcon "fab fa-instagram" }
+        , newTabLink [ ariaLabel "Github" ] { url = "https://github.com/jzxhuang/", label = faIcon "fab fa-github" }
+        , newTabLink [ ariaLabel "Email" ] { url = "mailto:jzxhuang@edu.uwaterloo.ca", label = faIcon "far fa-envelope" }
+        , newTabLink [ ariaLabel "LinkedIn" ] { url = "https://linkedin.com/in/jzxhuang/", label = faIcon "fab fa-linkedin-in" }
         ]
+
+
+ariaLabel : String -> Attribute msg
+ariaLabel label =
+    htmlAttribute <| Html.Attributes.attribute "aria-label" label
 
 
 faIcon : String -> Element msg
