@@ -14,7 +14,7 @@ import Html.Attributes exposing (class)
 
 
 main =
-    layout [ width fill, height fill, Font.family [ Font.typeface "Open Sans", Font.sansSerif ], Background.color (rgb255 248 249 250) ] <|
+    layout [ Font.family [ Font.typeface "Open Sans", Font.sansSerif ], Background.color (rgb255 248 249 250) ] <|
         column
             -- Card with shadow
             [ centerX
@@ -25,9 +25,10 @@ main =
             , Border.color (rgb255 219 219 219)
             , Border.shadow { blur = 20, color = rgba 0 0 0 0.1, offset = ( 0, 0 ), size = 1 }
             , Background.color (rgb255 255 255 255)
+            , spacing 42
             ]
-            [ -- Main content
-              column [ centerX, centerY, spacing 45 ]
+            -- Main content
+            [ column [ centerX, centerY, spacing 42, paddingEach { edges | top = 10 }, Region.mainContent ]
                 [ -- Photo
                   image [ centerX, htmlAttribute <| class "headshot" ]
                     { src = "images/headshot.jpg", description = "Jeffrey Huang" }
@@ -39,13 +40,14 @@ main =
                     ]
 
                 -- Intro paragraph
-                , paragraph [ Font.center, Font.light, paddingXY 20 0, Font.size 15, centerX, spacing 10 ] [ text "Hey! I'm a computer engineering student at the University of Waterloo. I love all things tech, and I also love travelling, snowboarding, and trying new food." ]
+                , paragraph [ Font.center, Font.light, paddingXY 20 0, Font.size 15, centerX, spacing 10 ]
+                    [ text "Hey! I'm a computer engineering student at the University of Waterloo. I love all things tech, and I also love travelling, snowboarding, and trying new food." ]
 
                 -- Social Links (icons)
                 , viewSocialLinks
 
                 -- Nav links (text)
-                , row [ Font.light, Font.color <| rgb255 0 0 180, centerX, spacing 45, htmlAttribute <| class "nav-links" ]
+                , row [ Region.navigation, Font.light, Font.color <| rgb255 0 0 180, centerX, spacing 45, htmlAttribute <| class "nav-links" ]
                     [ newTabLink [] { url = "https://medium.com/@jzxhuang/", label = text "Blog" }
                     , newTabLink [] { url = "resume_jhuang.pdf", label = text "Resume" }
                     ]
@@ -62,8 +64,9 @@ main =
                 , Font.size 12
                 , alignBottom
                 ]
-                [ text "© 2019 Jeffrey Huang | Made with ♥ and Elm—"
+                [ text "Made with ♥ and Elm—"
                 , newTabLink [ htmlAttribute <| class "footer-link" ] { url = "https://github.com/jzxhuang/jzxhuang.github.io", label = text "see source code" }
+                , text " | © 2019 Jeffrey Huang"
                 ]
             ]
 
