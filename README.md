@@ -1,6 +1,6 @@
 # Personal Site | jzxhuang
 
-My personal site. Check it out at [http://jzxhuang.com][jzxhuang].
+My personal site. Check it out at [https://jzxhuang.com][jzxhuang].
 
 Static site built with these awesome technologies:
 
@@ -9,6 +9,6 @@ Static site built with these awesome technologies:
 * [Github Pages]
 
 [Elm]: https://elm-lang.org/
-[jzxhuang]: http://jzxhuang.com/
+[jzxhuang]: https://jzxhuang.com/
 [Font Awesome Icons]: https://fontawesome.com/
 [Github Pages]: https://pages.github.com/
