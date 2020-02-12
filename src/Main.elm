@@ -13,6 +13,7 @@ import Html.Attributes exposing (class)
 -- MAIN
 
 
+main : Html.Html msg
 main =
     layout [ Font.family [ Font.typeface "Open Sans", Font.sansSerif ], Background.color (rgb255 248 249 250) ] <|
         column
@@ -29,8 +30,7 @@ main =
             ]
             -- Main content
             [ column [ centerX, centerY, spacing 42, paddingEach { edges | top = 10 }, Region.mainContent ]
-                [ -- Photo
-                  image [ centerX, htmlAttribute <| class "headshot" ]
+                [ image [ centerX, htmlAttribute <| class "headshot" ]
                     { src = "images/headshot.jpg", description = "Jeffrey Huang" }
 
                 -- h1 and h2
@@ -92,5 +92,6 @@ faIcon icon =
     html <| Html.i [ class icon ] [ Html.text "" ]
 
 
+edges : { left : Int, right : Int, top : Int, bottom : Int }
 edges =
     { left = 0, right = 0, top = 0, bottom = 0 }

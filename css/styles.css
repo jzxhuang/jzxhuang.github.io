@@ -1,13 +1,12 @@
 footer a.footer-link {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:hover {
-    color: darkblue;
+  color: darkblue;
 }
 
-
-.headshot>img {
-    border-radius: 50%;
-    width: 15rem;
+.headshot > img {
+  border-radius: 50%;
+  width: 14rem;
 }
