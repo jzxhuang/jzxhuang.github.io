@@ -1,6 +1,6 @@
 # Personal Site | jzxhuang
 
-My personal site. Check it out at [http://jzxhuang.com][jzxhuang].
+My personal site. Check it out at [https://jzxhuang.com][jzxhuang].
 
 Built with these awesome technologies and resources:
 
@@ -11,7 +11,7 @@ Built with these awesome technologies and resources:
 * [Dracula Theme]
 
 [Elm]: https://elm-lang.org/
-[jzxhuang]: http://jzxhuang.com/
+[jzxhuang]: https://jzxhuang.com/
 [Font Awesome Icons]: https://fontawesome.com/
 [Github Pages]: https://pages.github.com/
 [Icon Monstr]: https://iconmonstr.com/
