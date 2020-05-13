@@ -11,3 +11,29 @@ a.underline-link {
 .draculaIcon {
   padding-left: 8px;
 }
+
+.lightbulb-icon {
+  animation: bounce 8s;
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  overflow: visible;
+}
+
+@keyframes bounce {
+  0%,
+  6%,
+  12.5%,
+  18.75%,
+  25% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-16px);
+  }
+  15% {
+    transform: translateY(-8px);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+}
