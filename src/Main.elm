@@ -14,6 +14,15 @@ import Svg.Attributes
 
 
 
+-- Constants
+
+
+resumeUrl : String
+resumeUrl =
+    "https://s3.amazonaws.com/jzxhuang.com/resume_jhuang.pdf"
+
+
+
 -- Type declarations
 
 
@@ -124,7 +133,7 @@ viewBody model =
                 -- Nav links (text)
                 , row [ Region.navigation, Font.light, Font.color palette.link, centerX, spacing 45, htmlAttribute <| class "nav-links" ]
                     [ newTabLink [ getLinkHover model ] { url = "https://medium.com/@jzxhuang/", label = text "Blog" }
-                    , newTabLink [ getLinkHover model ] { url = "resume_jhuang.pdf", label = text "Resume" }
+                    , newTabLink [ getLinkHover model ] { url = resumeUrl, label = text "Resume" }
                     ]
                 ]
 
