@@ -57,17 +57,31 @@ export const MainCard = memo(function MainCard() {
         <SocialButtons />
       </div>
 
-      <footer className="grid grid-flow-col justify-center justify-items-center gap-2 text-gray-400 dark:text-dracula-dark-600 text-sm ">
-        <Link
-          className="underline"
-          href="https://github.com/jzxhuang/jzxhuang.github.io"
-          target="_blank"
-          rel="noreferrer"
-        >
-          See source code
-        </Link>
-        <span>|</span>
-        <ColorThemePicker />
+      <footer className="grid justify-center justify-items-center text-gray-400 dark:text-dracula-dark-600 text-sm ">
+        <div className="text-center">
+          The mouse-tracking effect is implemented using
+          <Link
+            className="underline pl-1"
+            href="https://en.wikipedia.org/wiki/Particle_swarm_optimization"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Particle Swarm Optimization.
+          </Link>
+        </div>
+
+        <div className="grid grid-flow-col justify-center justify-items-center gap-2">
+          <Link
+            className="underline"
+            href="https://github.com/jzxhuang/jzxhuang.github.io"
+            target="_blank"
+            rel="noreferrer"
+          >
+            See source code
+          </Link>
+          <span>|</span>
+          <ColorThemePicker />
+        </div>
       </footer>
     </div>
   )
