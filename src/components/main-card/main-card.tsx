@@ -41,7 +41,7 @@ export const MainCard = memo(function MainCard() {
               Spatial
             </Link>
             {
-              ". I studied Computer Engineering at the University of Waterloo. In my free time, I snowboard, travel, and eat lots of food :)"
+              ". I studied Computer Engineering at the University of Waterloo. In my free time, I snowboard, travel, eat lots of food and drink lots of tea :)"
             }
           </p>
         </div>
