@@ -1,8 +1,0 @@
-#!/bin/bash
-cmd/reset
-
-printf "\n\e[0;32m🍣   Building and minifying assets...\e[0m\n\n"
-npx elm make src/Main.elm --optimize --output=temp.js 
-npx google-closure-compiler temp.js --js_output_file=elm.js
-rm temp.js
-

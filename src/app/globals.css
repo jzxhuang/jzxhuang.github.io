@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a:hover,
+  button:hover {
+    @apply text-indigo-500 dark:text-dracula-cyan-600;
+  }
+  a,
+  button {
+    @apply transition-colors duration-200;
+  }
+}

@@ -1,18 +1,10 @@
 # Personal Site | jzxhuang
 
-My personal site. Check it out at [https://jzxhuang.com][jzxhuang].
+My personal site. Check it out at https://jzxhuang.com.
 
-Built with these awesome technologies and resources:
+Built with:
 
-* [Elm]
-* [Font Awesome Icons]
-* [Github Pages]
-* [Icon Monstr]
-* [Dracula Theme]
-
-[Elm]: https://elm-lang.org/
-[jzxhuang]: https://jzxhuang.com/
-[Font Awesome Icons]: https://fontawesome.com/
-[Github Pages]: https://pages.github.com/
-[Icon Monstr]: https://iconmonstr.com/
-[Dracula Theme]: https://draculatheme.com/
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Dracula Theme](https://draculatheme.com/)
+- [Vercel](https://vercel.com/)

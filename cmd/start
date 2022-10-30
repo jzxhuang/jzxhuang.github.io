@@ -1,6 +1,0 @@
-#!/bin/bash
-cmd/reset
-
-printf "\n\e[0;32m🍣   Starting \"elm-live\"...\e[0m\n\n"
-npx elm-live src/Main.elm --start-page=index.html --path-to-elm node_modules/.bin/elm --port=8000 -- --output=elm.js 
-# npx elm-live src/Main.elm --start-page=elm.html --path-to-elm node_modules/.bin/elm --port=8000 -- --output=elm.js --debug
