@@ -15,7 +15,7 @@ const config = {
   },
   experimental: {
     appDir: true,
-    runtime: "experimental-edge",
+    // runtime: "experimental-edge",
   },
 }
 export default config
