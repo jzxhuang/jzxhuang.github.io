@@ -1,8 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { memo } from "react"
-import { FaGithub, FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa"
-
+import { FaGithub, FaLinkedin, FaRegEnvelope, FaTwitter } from "react-icons/fa"
 import Headshot from "../../../public/images/headshot.png"
 import { ColorThemePicker } from "../color-theme-picker/color-theme-picker"
 
@@ -57,7 +56,7 @@ export const MainCard = memo(function MainCard() {
         <SocialButtons />
       </div>
 
-      <footer className="grid grid-flow-col justify-center justify-items-center gap-2 text-gray-400 dark:text-dracula-dark-600 text-sm ">
+      <footer className="grid grid-flow-col justify-between px-4 justify-items-center gap-2 text-gray-400 dark:text-dracula-dark-600 text-sm ">
         <Link
           className="underline"
           href="https://github.com/jzxhuang/jzxhuang.github.io"
@@ -66,7 +65,6 @@ export const MainCard = memo(function MainCard() {
         >
           See source code
         </Link>
-        <span>|</span>
         <ColorThemePicker />
       </footer>
     </div>
@@ -74,9 +72,9 @@ export const MainCard = memo(function MainCard() {
 })
 
 const socialButtons = [
-  { Icon: FaInstagram, url: "https://www.instagram.com/jzxhuang/", label: "Instagram" },
   { Icon: FaGithub, url: "https://github.com/jzxhuang/", label: "Github" },
   { Icon: FaLinkedin, url: "https://www.linkedin.com/in/jzxhuang/", label: "LinkedIn" },
+  { Icon: FaTwitter, url: "https://twitter.com/jeffzxh/", label: "Twitter" },
   { Icon: FaRegEnvelope, url: "mailto:jzxhuang@uwaterloo.ca", label: "Email" },
 ]
 

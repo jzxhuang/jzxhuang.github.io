@@ -1,8 +1,6 @@
 import { Open_Sans } from "@next/font/google"
-
-import { GlobalContexts } from "./global-contexts"
-
 import "./globals.css"
+import { Providers } from "./providers"
 
 const openSans = Open_Sans({ subsets: ["latin"], display: "swap" })
 
@@ -10,7 +8,7 @@ const WEB_URL = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={openSans.className}>
+    <html lang="en" className={openSans.className} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -37,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className="bg-zinc-50 dark:bg-dracula-dark">
-        <GlobalContexts>{children}</GlobalContexts>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
