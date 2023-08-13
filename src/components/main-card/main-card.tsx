@@ -2,28 +2,28 @@ import Image from "next/image"
 import Link from "next/link"
 import { memo } from "react"
 import { FaGithub, FaLinkedin, FaRegEnvelope, FaTwitter } from "react-icons/fa"
-import Headshot from "../../../public/images/headshot.png"
+import Headshot from "@/assets/images/headshot.png"
 import { ColorThemePicker } from "../color-theme-picker/color-theme-picker"
 
 export const MainCard = memo(function MainCard() {
   return (
     <div
-      className="flex flex-col justify-between  w-full md:w-5/6 max-w-xl h-screen md:h-auto min-h-[900px] px-2 py-4 md:rounded-md
-      bg-zinc-50 dark:bg-dracula-darker dark:text-dracula-light
-      shadow-xl shadow-stone-200 dark:shadow-dracula-darker-800"
+      className="flex h-screen min-h-[900px]  w-full max-w-xl flex-col justify-between bg-zinc-50 px-2 py-4 shadow-xl shadow-stone-200
+      dark:bg-dracula-darker dark:text-dracula-light dark:shadow-dracula-darker-800
+      md:h-auto md:w-5/6 md:rounded-md"
     >
-      <div className="flex-1 grid gap-12 justify-items-center content-center text-center py-10 px-5">
+      <div className="grid flex-1 content-center justify-items-center gap-12 py-10 px-5 text-center">
         <Image
           priority
           width={300}
           height={300}
           src={Headshot}
           alt="Profile picture"
-          className="rounded-full w-1/2 max-w-sm"
+          className="w-1/2 max-w-sm rounded-full"
         />
         <div>
-          <h1 className="text-4xl sm:text-5xl dark:text-dracula-green font-normal">Jeff Huang</h1>
-          <h2 className="text-lg sm:text-xl pt-1 text-gray-500 dark:text-dracula-pink font-normal">
+          <h1 className="text-4xl font-normal dark:text-dracula-green sm:text-5xl">Jeff Huang</h1>
+          <h2 className="pt-1 text-lg font-normal text-gray-500 dark:text-dracula-pink sm:text-xl">
             Software Engineer
           </h2>
         </div>
@@ -45,7 +45,7 @@ export const MainCard = memo(function MainCard() {
           </p>
         </div>
 
-        <div className="grid grid-flow-col gap-12 text-indigo-800 dark:text-dracula-purple text-2xl">
+        <div className="grid grid-flow-col gap-12 text-2xl text-indigo-800 dark:text-dracula-purple">
           <Link href="https://jzxhuang.medium.com/" target="_blank" rel="noreferrer">
             <h3>Blog</h3>
           </Link>
@@ -56,15 +56,16 @@ export const MainCard = memo(function MainCard() {
         <SocialButtons />
       </div>
 
-      <footer className="grid grid-flow-col justify-between px-4 justify-items-center gap-2 text-gray-400 dark:text-dracula-dark-600 text-sm ">
+      <footer className="grid grid-flow-col items-center justify-center justify-items-center gap-2 px-4 text-sm text-gray-400 dark:text-dracula-dark-600 ">
         <Link
           className="underline"
           href="https://github.com/jzxhuang/jzxhuang.github.io"
           target="_blank"
           rel="noreferrer"
         >
-          See source code
+          Source code
         </Link>
+        <span>|</span>
         <ColorThemePicker />
       </footer>
     </div>
@@ -80,7 +81,7 @@ const socialButtons = [
 
 export const SocialButtons = memo(function SocialButtons() {
   return (
-    <div className="grid gap-6 grid-flow-col ">
+    <div className="grid grid-flow-col gap-6 ">
       {socialButtons.map((button) => {
         return (
           <Link key={button.url} href={button.url} target="_blank" rel="noreferrer" aria-label={button.label}>

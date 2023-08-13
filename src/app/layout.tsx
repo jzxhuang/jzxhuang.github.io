@@ -1,40 +1,34 @@
-import { Open_Sans } from "@next/font/google"
+import clsx from "clsx"
+import { Open_Sans } from "next/font/google"
+import { type Metadata } from "next"
 import "./globals.css"
 import { Providers } from "./providers"
 
-const openSans = Open_Sans({ subsets: ["latin"], display: "swap" })
+const openSans = Open_Sans({ subsets: ["latin"], display: "swap", variable: "--font-sans" })
 
-const WEB_URL = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"
+const DESCRIPTION = "Hi! My name is Jeff. I like to code, travel, eat, and drink tea :)"
+
+export const metadata: Metadata = {
+  title: "Jeff Huang | jzxhuang",
+  description: DESCRIPTION,
+  keywords: ["Jeff Huang", "jzxhuang"],
+  // OG image generated using @vercel/og in open-graph.tsx (just to experiment)
+  // See https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif
+  openGraph: {
+    title: "Jeff Huang | jzxhuang",
+    description: DESCRIPTION,
+  },
+  manifest: "/site.webmanifest",
+  // Google Search Console
+  verification: {
+    google: "oWN-7MScfVJWYHbPM5BGkrlsIX1d_y9HSFpIPP1myNI",
+  },
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={openSans.className} suppressHydrationWarning>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <title>Jeff Huang | jzxhuang</title>
-        <meta name="description" content="Hi! My name is Jeff. I like to code, travel, eat, and drink lots of tea :)" />
-        <meta key="og:title" property="og:title" content="Jeff Huang | jzxhuang" />
-        <meta
-          key="og:description"
-          property="og:description"
-          content="Hi! My name is Jeff. I like to code, travel, eat, and drink lots of tea :)"
-        />
-        <meta key="og:image" property="og:image" content={`${WEB_URL}/api/og-image`} />
-
-        {/* Google Search Console */}
-        <meta name="google-site-verification" content="oWN-7MScfVJWYHbPM5BGkrlsIX1d_y9HSFpIPP1myNI" />
-
-        {/* Favicon generated with https://realfavicongenerator.net/*/}
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000405" />
-        <meta name="msapplication-TileColor" content="#00aba9" />
-        <meta name="theme-color" content="#ffffff" />
-      </head>
-      <body className="bg-zinc-50 dark:bg-dracula-dark">
+    <html lang="en" className={openSans.variable} suppressHydrationWarning>
+      <body className={clsx("bg-background text-foreground font-sans", openSans.variable)}>
         <Providers>{children}</Providers>
       </body>
     </html>

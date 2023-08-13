@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* zinc-50 */
+    --background: 250 250 250;
+    --foreground: 0 0 0;
+  }
+
+  .dark {
+    /* dracula-dark-900 */
+    --background: 68 71 90;
+    /* dracula-light-50 */
+    --foreground: 40 42 54;
+  }
+
   a:hover,
   button:hover {
     @apply text-indigo-500 dark:text-dracula-cyan-600;
