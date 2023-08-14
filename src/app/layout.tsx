@@ -1,6 +1,6 @@
 import clsx from "clsx"
-import { Open_Sans } from "next/font/google"
 import { type Metadata } from "next"
+import { Open_Sans } from "next/font/google"
 import "./globals.css"
 import { Providers } from "./providers"
 
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Jeff Huang | jzxhuang",
   description: DESCRIPTION,
   keywords: ["Jeff Huang", "jzxhuang"],
+  metadataBase: process.env.VERCEL_ENV === "production" ? new URL("https://jzxhuang.com") : undefined,
   // OG image generated using @vercel/og in open-graph.tsx (just to experiment)
   // See https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif
   openGraph: {
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={openSans.variable} suppressHydrationWarning>
-      <body className={clsx("bg-background text-foreground font-sans", openSans.variable)}>
+      <body className={clsx("bg-background font-sans text-foreground", openSans.variable)}>
         <Providers>{children}</Providers>
       </body>
     </html>
